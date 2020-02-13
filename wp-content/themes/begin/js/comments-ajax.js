@@ -6,7 +6,7 @@ while ( i <= len && got == -1){
 	var js_url = document.getElementsByTagName('script')[i].src,
 			got = js_url.indexOf('comments-ajax.js'); i++ ;
 }
-js_url = js_url.replace('cdn.jsdelivr.net/gh/haidaogonglue-files/wordpress@latest','www.haidaogonglue.com/');
+js_url = js_url.replace('cdn.jsdelivr.net/gh/haidaogonglue-files/wordpress','www.haidaogonglue.com/');
 var edit_mode = '1', // 再编辑模式( '1'=打开; '0'=关闭 )
 		ajax_php_url = js_url.replace('comments-ajax.js','../inc/comment-ajax.php'),
 		wp_url = js_url.substr(0, js_url.indexOf('wp-content')),
